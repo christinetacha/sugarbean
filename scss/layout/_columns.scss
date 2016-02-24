@@ -2,14 +2,25 @@
 
 *:not(body):not(html) {
   box-sizing: border-box;
-  border: 1px dashed grey;
+  //border: 1px dashed grey;
 }
 
 .hero-image {
   .sugarbean {
-    text-align: center;
+    // text-align: center;
+    position: absolute;
+    // left: 15%;
+    height: 100%;
+    width: 37%;
+    background-color: $eggplant;
+    opacity: .3;
   }
-  height: 700px;
+  height: 600px;
+  @include background-image(url("../img/hero-image.jpeg"));
+  background-repeat: no repeat;
+  background-size: cover;
+  background-position: top;
+  position: relative;
 }
 
 .sub-heading {

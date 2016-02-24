@@ -1,5 +1,26 @@
 // For h1, h2 etc styles, see 'base'
 
+body {
+  font-family: 'Josefin Slab', serif;
+}
+
+.navbar {
+  .menu ul {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  .logo {
+    font-size: 30px;
+    margin-top: 19px;
+    margin-left: $outer-margin;
+  }
+}
+
+.sugarbean {
+  font-size: 1.7em;
+  //color: #e8175d;
+  color: #fff;
+}
 
 .sub-heading {
   text-align: center;

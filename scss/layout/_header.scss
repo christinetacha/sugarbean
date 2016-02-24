@@ -2,7 +2,9 @@
 
 .navbar {
   overflow: auto;
-  background: #eee;
+  background: shade($cerulean, 40%);
+  color: $chiffon;
+  height: 60px;
   .logo {
     float: left;
     li {
