@@ -1,0 +1,114 @@
+// Wireframes
+
+*:not(body):not(html) {
+  box-sizing: border-box;
+  border: 1px dashed grey;
+}
+
+.hero-image {
+  .sugarbean {
+    text-align: center;
+  }
+  height: 700px;
+}
+
+.sub-heading {
+  min-height: 250px;
+}
+
+.gallery-image, .img-description {
+  height: 500px;
+}
+
+// End Wireframes
+
+.intro-section {
+  .img-description {
+    width: 30%;
+    float: right;
+    @media screen and (max-width: $small-breakpoint) {
+      float: none;
+      width: 100%;
+    }
+  }
+  .gallery-image {
+    width: 70%;
+    float: left;
+    @media screen and (max-width: $small-breakpoint) {
+      float: none;
+      width: 100%;
+    }
+  }
+  &::after {
+    @extend .clearfix;
+  }
+}
+
+.details {
+  ul {
+    width: 25%;
+    float: left;
+    min-height: 300px;
+    @media screen and (max-width: $small-breakpoint) {
+      width: 50%;
+    }
+  }
+  &::after {
+    @extend .clearfix;
+  }
+  ul:nth-child(3), ul:nth-child(4) {
+    @media screen and (max-width: $small-breakpoint) {
+      display: none;
+    }
+  }
+}
+
+.brunch-specials {
+  min-height: 75px;
+}
+
+.brunch-pictures {
+  ul {
+    &::after {
+      @extend .clearfix;
+    }
+    li {
+      float: left;
+      width: 25%;
+      list-style: none;
+      min-height: 300px;
+      @media screen and (max-width: $small-breakpoint) {
+        width: 50%;
+      }
+    }
+  }
+  li:nth-child(3), li:nth-child(4) {
+    @media screen and (max-width: $small-breakpoint) {
+      display: none;
+    }
+  }
+}
+
+.about-us {
+  .about-image {
+    float: left;
+    min-height: 150px;
+    width: 70%;
+    @media screen and (max-width: $small-breakpoint) {
+      float: none;
+      width: 100%;
+    }
+  }
+  .about-text {
+    float: right;
+    min-height: 150px;
+    width: 30%;
+    @media screen and (max-width: $small-breakpoint) {
+      float: none;
+      width: 100%;
+    }
+  }
+  &::after {
+    @extend .clearfix;
+  }
+}
