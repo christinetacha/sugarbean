@@ -89,15 +89,15 @@
 }
 
 .brunch-pictures {
+  background: $periwinkle;
   ul {
     &::after {
       @extend .clearfix;
     }
     li {
       float: left;
-      width: 33%;
+      width: 33.33%;
       list-style: none;
-      min-height: 300px;
       img {
         width: 100%;
       }
@@ -117,7 +117,11 @@
   .about-image {
     float: left;
     min-height: 150px;
-    width: 70%;
+    width: 50%;
+    img {
+      width: 100%;
+
+    }
     @media screen and (max-width: $small-breakpoint) {
       float: none;
       width: 100%;
@@ -126,7 +130,7 @@
   .about-text {
     float: right;
     min-height: 150px;
-    width: 30%;
+    width: 50%;
     @media screen and (max-width: $small-breakpoint) {
       float: none;
       width: 100%;
