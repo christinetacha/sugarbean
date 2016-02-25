@@ -1,12 +1,14 @@
 h1 {
   font-size: 4em; }
 
+p {
+  margin: 15px 0; }
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
-html, body, div, span, applet, object, iframe,
-h2, h3, h4, h5, h6, p, blockquote, pre,
+html, body, div, span, applet, object, iframe, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -57,7 +59,7 @@ table {
   background-image: url("../img/hero-image.jpeg");
   background-repeat: no repeat;
   background-size: cover;
-  background-position: top;
+  background-position: center;
   position: relative; }
   .hero-image .sugarbean {
     position: absolute;
@@ -67,50 +69,61 @@ table {
     opacity: .3; }
 
 .sub-heading {
-  min-height: 250px; }
+  min-height: 150px;
+  background-color: #e7472e;
+  margin: -20px;
+  padding: 50px 10px 0 10px; }
 
 .gallery-image, .img-description {
-  height: 500px; }
+  height: 500px;
+  overflow: hidden;
+  position: relative; }
+  .gallery-image img, .img-description img {
+    width: 100%;
+    margin-top: -60px; }
 
 .intro-section .img-description {
   width: 30%;
-  float: right; }
-  @media screen and (max-width: 550px) {
+  float: right;
+  padding: 30px; }
+  @media screen and (max-width: 1100px) {
     .intro-section .img-description {
-      float: none;
       width: 100%; } }
 .intro-section .gallery-image {
   width: 70%;
   float: left; }
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: 1100px) {
     .intro-section .gallery-image {
-      float: none;
-      width: 100%; } }
+      display: none; } }
 
-.details ul {
-  width: 25%;
-  float: left;
-  min-height: 300px; }
+.details {
+  background-color: #ddbc95; }
+  .details ul {
+    width: 33%;
+    float: left;
+    margin: 0 0 20px 0; }
+    @media screen and (max-width: 550px) {
+      .details ul {
+        width: 50%; } }
   @media screen and (max-width: 550px) {
-    .details ul {
-      width: 50%; } }
-@media screen and (max-width: 550px) {
-  .details ul:nth-child(3), .details ul:nth-child(4) {
-    display: none; } }
+    .details ul:nth-child(3), .details ul:nth-child(4) {
+      display: none; } }
 
 .brunch-specials {
   min-height: 75px; }
 
 .brunch-pictures ul li {
   float: left;
-  width: 25%;
+  width: 33%;
   list-style: none;
   min-height: 300px; }
+  .brunch-pictures ul li img {
+    width: 100%; }
   @media screen and (max-width: 550px) {
     .brunch-pictures ul li {
       width: 50%; } }
 @media screen and (max-width: 550px) {
-  .brunch-pictures li:nth-child(3), .brunch-pictures li:nth-child(4) {
+  .brunch-pictures li:nth-child(3) {
     display: none; } }
 
 .about-us .about-image {
@@ -165,8 +178,21 @@ body {
 .sugarbean {
   font-size: 1.7em;
   color: #fff; }
+  @media screen and (max-width: 550px) {
+    .sugarbean {
+      font-size: 1em; } }
 
 .sub-heading {
+  text-align: center;
+  font-weight: bold;
+  color: #f0efea; }
+
+.details {
+  text-align: center;
+  color: #50312f;
+  font-size: 20px; }
+
+.brunch-specials {
   text-align: center; }
 
 footer {

@@ -20,9 +20,24 @@ body {
   font-size: 1.7em;
   //color: #e8175d;
   color: #fff;
+  @media screen and (max-width: $small-breakpoint) {
+    font-size: 1em;
+  }
 }
 
 .sub-heading {
+  text-align: center;
+  font-weight: bold;
+  color: $chiffon;
+}
+
+.details {
+  text-align: center;
+  color: $eggplant;
+  font-size: 20px;
+}
+
+.brunch-specials {
   text-align: center;
 }
 
