@@ -2,7 +2,8 @@ h1 {
   font-size: 4em; }
 
 p {
-  margin: 15px 0; }
+  margin: 15px 0;
+  font-size: 20px; }
 
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -63,10 +64,14 @@ table {
   position: relative; }
   .hero-image .sugarbean {
     position: absolute;
-    height: 100%;
     width: 37%;
-    background-color: #50312f;
-    opacity: .3; }
+    top: 30px;
+    left: 30px;
+    opacity: .5; }
+    .hero-image .sugarbean img {
+      width: 100%;
+      max-width: 407px;
+      min-width: 370px; }
 
 .sub-heading {
   min-height: 150px;
@@ -75,7 +80,7 @@ table {
   padding: 50px 10px 0 10px; }
 
 .gallery-image, .img-description {
-  height: 500px;
+  max-height: 500px;
   overflow: hidden;
   position: relative; }
   .gallery-image img, .img-description img {
@@ -84,15 +89,18 @@ table {
 
 .intro-section .img-description {
   width: 30%;
+  max-width: 400px;
   float: right;
   padding: 30px; }
-  @media screen and (max-width: 1100px) {
+  @media screen and (max-width: 1290px) {
     .intro-section .img-description {
-      width: 100%; } }
+      width: 100%;
+      max-width: none; } }
 .intro-section .gallery-image {
   width: 70%;
+  min-width: 840px;
   float: left; }
-  @media screen and (max-width: 1100px) {
+  @media screen and (max-width: 1290px) {
     .intro-section .gallery-image {
       display: none; } }
 
@@ -110,10 +118,11 @@ table {
       display: none; } }
 
 .brunch-specials, .about-title {
-  min-height: 75px; }
+  min-height: 75px;
+  background: #f0efea; }
 
 .brunch-pictures {
-  background: #d0e1f9; }
+  background: #50312f; }
   .brunch-pictures ul li {
     float: left;
     width: 33.33%;
@@ -127,24 +136,40 @@ table {
     .brunch-pictures li:nth-child(3) {
       display: none; } }
 
-.about-us .about-image {
-  float: left;
-  min-height: 150px;
-  width: 50%; }
-  .about-us .about-image img {
-    width: 100%; }
-  @media screen and (max-width: 550px) {
-    .about-us .about-image {
-      float: none;
-      width: 100%; } }
-.about-us .about-text {
-  float: right;
-  min-height: 150px;
-  width: 50%; }
-  @media screen and (max-width: 550px) {
-    .about-us .about-text {
-      float: none;
-      width: 100%; } }
+.about-us {
+  max-height: 540px;
+  overflow: hidden; }
+  .about-us .about-image {
+    float: left;
+    width: 50%; }
+    .about-us .about-image img {
+      width: 100%;
+      max-width: 730px;
+      margin: 0;
+      padding: 0; }
+    @media screen and (max-width: 550px) {
+      .about-us .about-image {
+        float: none;
+        width: 100%; } }
+  .about-us .about-text {
+    padding: 30px;
+    float: right;
+    min-height: 150px;
+    width: 50%; }
+    @media screen and (max-width: 550px) {
+      .about-us .about-text {
+        float: none;
+        width: 100%; } }
+
+footer {
+  text-align: center;
+  background-color: #e7472e;
+  color: #f0efea;
+  padding: 15px; }
+  footer p {
+    margin-bottom: 0; }
+  footer h3 {
+    margin-top: 0; }
 
 .navbar {
   overflow: auto;
@@ -198,18 +223,27 @@ body {
 .brunch-specials, .about-title {
   text-align: center; }
   .brunch-specials p, .about-title p {
-    margin-top: 0; }
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 15px;
+    color: #144a62;
+    font-weight: bold; }
   .brunch-specials h2, .about-title h2 {
     text-align: center;
-    margin-bottom: 0; }
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 15px;
+    color: #144a62; }
 
 .about-title {
-  background: #d0e1f9; }
+  background: #50312f;
+  color: #f0efea; }
   .about-title h2 {
     margin-top: 0;
-    padding-top: 22px; }
+    padding-top: 22px;
+    color: #f0efea; }
 
-footer {
-  text-align: center; }
+.about-text h4 {
+  font-size: 24px; }
 
 /*# sourceMappingURL=styles.css.map */
