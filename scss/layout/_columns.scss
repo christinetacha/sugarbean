@@ -1,8 +1,7 @@
 // Wireframes
-
 *:not(body):not(html) {
   box-sizing: border-box;
-  // border: 1px dashed grey;
+  //border: 1px dashed grey;
 }
 
 .hero-image {
@@ -10,7 +9,7 @@
     img {
       width: 100%;
       max-width: 407px;
-      min-width: 370px;
+      //min-width: 370px;
     }
     // text-align: center;
     position: absolute;
@@ -20,6 +19,15 @@
     top: 30px;
     left: 30px;
     opacity: .5;
+    @media screen and (max-width: $small-breakpoint) {
+      width: 70%;
+      left: 15%;
+      right: 15%;
+      img {
+        width: 95%;
+        margin: 0 auto;
+      }
+    }
   }
   height: 600px;
   @include background-image(url("../img/hero-image.jpeg"));
@@ -30,18 +38,18 @@
 }
 
 .sub-heading {
-  min-height: 150px;
   background-color: $orange-red;
-  margin: -20px;
-  padding: 50px 10px 0 10px;
+  //margin: -20px; //found it
+  padding: 50px;
 }
 
 .gallery-image, .img-description {
+  height: 100%;
   img {
     width: 100%;
     margin-top: -60px;
   }
-  max-height: 500px;
+  //max-height: 500px;
   overflow: hidden;
   position: relative;
 }
@@ -49,14 +57,18 @@
 // End Wireframes
 
 .intro-section {
+  width: 100%;
+  margin: 0;
   .img-description {
+    background-color: #fff;
     width: 30%;
-    max-width: 400px;
+    //max-width: 400px;
     float: right;
     padding: 30px;
+    height: 100%;
     @media screen and (max-width: $medium-breakpoint) {
       width: 100%;
-      max-width: none;
+      height: 100%;
     }
   }
   .gallery-image {
@@ -91,6 +103,7 @@
     }
   }
   background-color: $latte;
+  margin-top: -4px;
 }
 
 .brunch-specials {
@@ -124,19 +137,21 @@
 }
 
 .about-us {
-  max-height: 540px;
   overflow: hidden;
   .about-image {
     float: left;
     width: 50%;
     img {
       width: 100%;
-      max-width: 730px;
+      //max-width: 730px;
       margin: 0;
       padding: 0;
+      @media screen and (max-width: $small-breakpoint) {
+        display: none;
+      }
       //margin-bottom: -9px;
     }
-    @media screen and (max-width: $small-breakpoint) {
+    @media screen and (max-width: $medium-breakpoint) {
       float: none;
       width: 100%;
     }
@@ -145,10 +160,15 @@
     padding: 30px;
     float: right;
     min-height: 150px;
+    height: 100%;
     width: 50%;
-    @media screen and (max-width: $small-breakpoint) {
+    @media screen and (max-width: $medium-breakpoint) {
+      //height: 500px;
       float: none;
       width: 100%;
+    }
+    @media screen and (max-width: $small-breakpoint) {
+      height: auto;
     }
   }
   &::after {

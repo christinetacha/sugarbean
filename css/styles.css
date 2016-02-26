@@ -70,42 +70,52 @@ table {
     opacity: .5; }
     .hero-image .sugarbean img {
       width: 100%;
-      max-width: 407px;
-      min-width: 370px; }
+      max-width: 407px; }
+    @media screen and (max-width: 550px) {
+      .hero-image .sugarbean {
+        width: 70%;
+        left: 15%;
+        right: 15%; }
+        .hero-image .sugarbean img {
+          width: 95%;
+          margin: 0 auto; } }
 
 .sub-heading {
-  min-height: 150px;
   background-color: #e7472e;
-  margin: -20px;
-  padding: 50px 10px 0 10px; }
+  padding: 50px; }
 
 .gallery-image, .img-description {
-  max-height: 500px;
+  height: 100%;
   overflow: hidden;
   position: relative; }
   .gallery-image img, .img-description img {
     width: 100%;
     margin-top: -60px; }
 
-.intro-section .img-description {
-  width: 30%;
-  max-width: 400px;
-  float: right;
-  padding: 30px; }
-  @media screen and (max-width: 1290px) {
-    .intro-section .img-description {
-      width: 100%;
-      max-width: none; } }
-.intro-section .gallery-image {
-  width: 70%;
-  min-width: 840px;
-  float: left; }
-  @media screen and (max-width: 1290px) {
-    .intro-section .gallery-image {
-      display: none; } }
+.intro-section {
+  width: 100%;
+  margin: 0; }
+  .intro-section .img-description {
+    background-color: #fff;
+    width: 30%;
+    float: right;
+    padding: 30px;
+    height: 100%; }
+    @media screen and (max-width: 1290px) {
+      .intro-section .img-description {
+        width: 100%;
+        height: 100%; } }
+  .intro-section .gallery-image {
+    width: 70%;
+    min-width: 840px;
+    float: left; }
+    @media screen and (max-width: 1290px) {
+      .intro-section .gallery-image {
+        display: none; } }
 
 .details {
-  background-color: #ddbc95; }
+  background-color: #ddbc95;
+  margin-top: -4px; }
   .details ul {
     width: 33%;
     float: left;
@@ -137,17 +147,18 @@ table {
       display: none; } }
 
 .about-us {
-  max-height: 540px;
   overflow: hidden; }
   .about-us .about-image {
     float: left;
     width: 50%; }
     .about-us .about-image img {
       width: 100%;
-      max-width: 730px;
       margin: 0;
       padding: 0; }
-    @media screen and (max-width: 550px) {
+      @media screen and (max-width: 550px) {
+        .about-us .about-image img {
+          display: none; } }
+    @media screen and (max-width: 1290px) {
       .about-us .about-image {
         float: none;
         width: 100%; } }
@@ -155,13 +166,18 @@ table {
     padding: 30px;
     float: right;
     min-height: 150px;
+    height: 100%;
     width: 50%; }
-    @media screen and (max-width: 550px) {
+    @media screen and (max-width: 1290px) {
       .about-us .about-text {
         float: none;
         width: 100%; } }
+    @media screen and (max-width: 550px) {
+      .about-us .about-text {
+        height: auto; } }
 
 footer {
+  margin-top: -4px;
   text-align: center;
   background-color: #e7472e;
   color: #f0efea;
@@ -172,20 +188,38 @@ footer {
     margin-top: 0; }
 
 .navbar {
-  overflow: auto;
+  overflow: visible;
   background: #144a62;
   color: #f0efea;
-  height: 60px; }
+  min-height: 60px; }
+  @media screen and (max-width: 550px) {
+    .navbar {
+      height: 120px; } }
   .navbar .logo {
     float: left; }
     .navbar .logo li {
       list-style: none; }
   .navbar .menu {
     float: right; }
+    .navbar .menu ul {
+      margin-top: 20px; }
+      @media screen and (max-width: 550px) {
+        .navbar .menu ul {
+          margin-top: 0;
+          padding-top: 20px; } }
+    @media screen and (max-width: 550px) {
+      .navbar .menu {
+        float: none; } }
     .navbar .menu li {
       float: left;
       list-style: none;
       margin: 0 10px; }
+      @media screen and (max-width: 550px) {
+        .navbar .menu li {
+          float: none;
+          width: 50%;
+          margin: 0 auto 10px auto;
+          text-align: center; } }
 
 .clearfix, .intro-section::after, .details::after, .brunch-pictures ul::after, .about-us::after {
   content: "";
@@ -196,8 +230,7 @@ body {
   font-family: 'Josefin Slab', serif; }
 
 .navbar .menu ul {
-  font-size: 20px;
-  margin-top: 20px; }
+  font-size: 20px; }
 .navbar .logo {
   font-size: 30px;
   margin-top: 19px;
@@ -214,6 +247,8 @@ body {
   text-align: center;
   font-weight: bold;
   color: #f0efea; }
+  .sub-heading h2 {
+    padding: 0 50px; }
 
 .details {
   text-align: center;

@@ -1,10 +1,13 @@
 // Nav
 
 .navbar {
-  overflow: auto;
+  overflow: visible;
   background: $cerulean;
   color: $chiffon;
-  height: 60px;
+  min-height: 60px;
+  @media screen and (max-width: $small-breakpoint) {
+    height: 120px;
+  }
   .logo {
     float: left;
     li {
@@ -12,11 +15,28 @@
     }
   }
   .menu {
+    ul {
+      margin-top: 20px;
+      @media screen and (max-width: $small-breakpoint) {
+        margin-top: 0;
+        padding-top: 20px;
+      }
+    }
     float: right;
+    @media screen and (max-width: $small-breakpoint) {
+      float: none;
+    }
     li {
       float: left;
       list-style: none;
       margin: 0 10px;
+      @media screen and (max-width: $small-breakpoint) {
+        float: none;
+        width: 50%;
+        margin: 0 auto 10px auto;
+        text-align: center;
+        //border: 1px solid grey;
+      }
     }
   }
 }
