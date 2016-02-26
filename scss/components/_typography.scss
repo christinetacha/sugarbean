@@ -1,0 +1,78 @@
+// For h1, h2 etc styles, see 'base'
+
+body {
+  font-family: 'Josefin Slab', serif;
+}
+
+.navbar {
+  .menu ul {
+    font-size: 20px;
+  }
+  .logo {
+    font-size: 30px;
+    margin-top: 19px;
+    margin-left: $outer-margin;
+  }
+}
+
+.sugarbean {
+  font-size: 1.7em;
+  //color: #e8175d;
+  color: #fff;
+  @media screen and (max-width: $small-breakpoint) {
+    font-size: 1em;
+  }
+}
+
+.sub-heading {
+  text-align: center;
+  font-weight: bold;
+  color: $chiffon;
+  h2 {
+    padding: 0 50px;
+    // @media screen and (max-width: $small-breakpoint) {
+    //   padding: 0 50px 25px 50px;
+    // }
+  }
+}
+
+.details {
+  text-align: center;
+  color: $eggplant;
+  font-size: 20px;
+}
+
+.brunch-specials {
+  p {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 15px;
+    color: $cerulean;
+    font-weight: bold;
+  }
+  h2 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 15px;
+    color: $cerulean;
+  }
+  text-align: center;
+}
+
+.about-title {
+  @extend .brunch-specials;
+  background: $eggplant;
+  color: $chiffon;
+  h2 {
+    margin-top: 0;
+    padding-top: 22px;
+    color: $chiffon;
+  }
+}
+
+.about-text {
+  h4 {
+    font-size: 24px;
+  }
+}

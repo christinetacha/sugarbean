@@ -1,0 +1,284 @@
+h1 {
+  font-size: 4em; }
+
+p {
+  margin: 15px 0;
+  font-size: 20px; }
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+*:not(body):not(html) {
+  box-sizing: border-box; }
+
+.hero-image {
+  height: 600px;
+  background-image: url("../img/hero-image.jpeg");
+  background-image: url("../img/hero-image.jpeg");
+  background-repeat: no repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative; }
+  .hero-image .sugarbean {
+    position: absolute;
+    width: 37%;
+    top: 30px;
+    left: 30px;
+    opacity: .5; }
+    .hero-image .sugarbean img {
+      width: 100%;
+      max-width: 407px; }
+    @media screen and (max-width: 550px) {
+      .hero-image .sugarbean {
+        width: 70%;
+        left: 15%;
+        right: 15%; }
+        .hero-image .sugarbean img {
+          width: 95%;
+          margin: 0 auto; } }
+
+.sub-heading {
+  background-color: #e7472e;
+  padding: 50px; }
+
+.gallery-image, .img-description {
+  height: 100%;
+  overflow: hidden;
+  position: relative; }
+  .gallery-image img, .img-description img {
+    width: 100%;
+    margin-top: -60px; }
+
+.intro-section {
+  width: 100%;
+  margin: 0; }
+  .intro-section .img-description {
+    background-color: #fff;
+    width: 30%;
+    float: right;
+    padding: 30px;
+    height: 100%; }
+    @media screen and (max-width: 1290px) {
+      .intro-section .img-description {
+        width: 100%;
+        height: 100%; } }
+  .intro-section .gallery-image {
+    width: 70%;
+    min-width: 840px;
+    float: left; }
+    @media screen and (max-width: 1290px) {
+      .intro-section .gallery-image {
+        display: none; } }
+
+.details {
+  background-color: #ddbc95;
+  margin-top: -4px; }
+  .details ul {
+    width: 33%;
+    float: left;
+    margin: 0 0 20px 0; }
+    @media screen and (max-width: 550px) {
+      .details ul {
+        width: 50%; } }
+  @media screen and (max-width: 550px) {
+    .details ul:nth-child(3), .details ul:nth-child(4) {
+      display: none; } }
+
+.brunch-specials, .about-title {
+  min-height: 75px;
+  background: #f0efea; }
+
+.brunch-pictures {
+  background: #50312f; }
+  .brunch-pictures ul li {
+    float: left;
+    width: 33.33%;
+    list-style: none; }
+    .brunch-pictures ul li img {
+      width: 100%; }
+    @media screen and (max-width: 550px) {
+      .brunch-pictures ul li {
+        width: 50%; } }
+  @media screen and (max-width: 550px) {
+    .brunch-pictures li:nth-child(3) {
+      display: none; } }
+
+.about-us {
+  overflow: hidden; }
+  .about-us .about-image {
+    float: left;
+    width: 50%; }
+    .about-us .about-image img {
+      width: 100%;
+      margin: 0;
+      padding: 0; }
+      @media screen and (max-width: 550px) {
+        .about-us .about-image img {
+          display: none; } }
+    @media screen and (max-width: 1290px) {
+      .about-us .about-image {
+        float: none;
+        width: 100%; } }
+  .about-us .about-text {
+    padding: 30px;
+    float: right;
+    min-height: 150px;
+    height: 100%;
+    width: 50%; }
+    @media screen and (max-width: 1290px) {
+      .about-us .about-text {
+        float: none;
+        width: 100%; } }
+    @media screen and (max-width: 550px) {
+      .about-us .about-text {
+        height: auto; } }
+
+footer {
+  margin-top: -4px;
+  text-align: center;
+  background-color: #e7472e;
+  color: #f0efea;
+  padding: 15px; }
+  footer p {
+    margin-bottom: 0; }
+  footer h3 {
+    margin-top: 0; }
+
+.navbar {
+  overflow: visible;
+  background: #144a62;
+  color: #f0efea;
+  min-height: 60px; }
+  @media screen and (max-width: 550px) {
+    .navbar {
+      height: 120px; } }
+  .navbar .logo {
+    float: left; }
+    .navbar .logo li {
+      list-style: none; }
+  .navbar .menu {
+    float: right; }
+    .navbar .menu ul {
+      margin-top: 20px; }
+      @media screen and (max-width: 550px) {
+        .navbar .menu ul {
+          margin-top: 0;
+          padding-top: 20px; } }
+    @media screen and (max-width: 550px) {
+      .navbar .menu {
+        float: none; } }
+    .navbar .menu li {
+      float: left;
+      list-style: none;
+      margin: 0 10px; }
+      @media screen and (max-width: 550px) {
+        .navbar .menu li {
+          float: none;
+          width: 50%;
+          margin: 0 auto 10px auto;
+          text-align: center; } }
+
+.clearfix, .intro-section::after, .details::after, .brunch-pictures ul::after, .about-us::after {
+  content: "";
+  display: table;
+  clear: both; }
+
+body {
+  font-family: 'Josefin Slab', serif; }
+
+.navbar .menu ul {
+  font-size: 20px; }
+.navbar .logo {
+  font-size: 30px;
+  margin-top: 19px;
+  margin-left: 15px; }
+
+.sugarbean {
+  font-size: 1.7em;
+  color: #fff; }
+  @media screen and (max-width: 550px) {
+    .sugarbean {
+      font-size: 1em; } }
+
+.sub-heading {
+  text-align: center;
+  font-weight: bold;
+  color: #f0efea; }
+  .sub-heading h2 {
+    padding: 0 50px; }
+
+.details {
+  text-align: center;
+  color: #50312f;
+  font-size: 20px; }
+
+.brunch-specials, .about-title {
+  text-align: center; }
+  .brunch-specials p, .about-title p {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 15px;
+    color: #144a62;
+    font-weight: bold; }
+  .brunch-specials h2, .about-title h2 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 15px;
+    color: #144a62; }
+
+.about-title {
+  background: #50312f;
+  color: #f0efea; }
+  .about-title h2 {
+    margin-top: 0;
+    padding-top: 22px;
+    color: #f0efea; }
+
+.about-text h4 {
+  font-size: 24px; }
+
+/*# sourceMappingURL=styles.css.map */
